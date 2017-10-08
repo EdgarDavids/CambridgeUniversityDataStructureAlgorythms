@@ -6,7 +6,8 @@ namespace CambridgeUniversityDataStructureAlgorythms
     {
         static void Main(string[] args)
         {
-            IntroCollectionsGenerics.IntroCollectionGenericHelper.BasicOperationsCollection();
+            //IntroCollectionsGenerics.IntroCollectionGenericHelper.BasicOperationsCollection();
+            IntroCollectionsGenerics.IntroCollectionGenericHelper.DoSwap();
             Console.ReadLine();
         }
     }

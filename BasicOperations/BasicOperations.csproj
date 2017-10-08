@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C487F07-1138-4429-8B3C-DD6A93E366F7}</ProjectGuid>
+    <ProjectGuid>{AB1A56EB-00AB-46A3-A913-392476B9693C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IntroCollectionsGenerics</RootNamespace>
-    <AssemblyName>IntroCollectionsGenerics</AssemblyName>
+    <RootNamespace>BasicOperations</RootNamespace>
+    <AssemblyName>BasicOperations</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,18 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IntroCollectionGenericHelper.cs" />
+    <Compile Include="Basic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BasicOperations\BasicOperations.csproj">
-      <Project>{ab1a56eb-00ab-46a3-a913-392476b9693c}</Project>
-      <Name>BasicOperations</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Basic\Basic.csproj">
-      <Project>{663a4d95-34f0-4f38-ad37-61ce42d11b5b}</Project>
-      <Name>Basic</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
