@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{201D2068-FEB7-4A6B-B71A-A3AE17E52F64}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{BA8D70D8-914A-4DC1-8E89-CE1813EDF624}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CambridgeUniversityDataStructureAlgorythms</RootNamespace>
-    <AssemblyName>CambridgeUniversityDataStructureAlgorythms</AssemblyName>
+    <RootNamespace>Timing</RootNamespace>
+    <AssemblyName>Timing</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,21 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CUDSAEntryPoint.cs" />
+    <Compile Include="Timing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\IntroCollectionsGenerics\IntroCollectionGeneric.csproj">
-      <Project>{9c487f07-1138-4429-8b3c-dd6a93e366f7}</Project>
-      <Name>IntroCollectionGeneric</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Timing\Timing.csproj">
-      <Project>{ba8d70d8-914a-4dc1-8e89-ce1813edf624}</Project>
-      <Name>Timing</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -37,5 +37,15 @@ namespace IntroCollectionsGenerics
             BasicOperations.Basic.Swap<string>(ref strvalue1, ref strvalue2);
             Console.WriteLine("After swap: strvalue1={0}, strvalue2={1}", strvalue1, strvalue2);
         }
+
+        public static long[] BuildArray(long[] arr) {
+            for (long i = 0; i < arr.GetUpperBound(0) - 1; i++) arr[i] = i;
+
+            return arr;
+        }
+
+        public static void GetArray(long[] arr) {
+            for (long i = 0; i < arr.GetUpperBound(0)-1; i++) Console.Write(string.Concat(arr[i], " "));
+        }
     }
 }
