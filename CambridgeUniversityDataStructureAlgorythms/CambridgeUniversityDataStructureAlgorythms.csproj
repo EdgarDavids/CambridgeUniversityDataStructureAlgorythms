@@ -49,6 +49,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Exercises\Exercises.csproj">
+      <Project>{7f70f157-7dcf-47cb-9431-ea009f3dbf10}</Project>
+      <Name>Exercises</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IntroCollectionsGenerics\IntroCollectionGeneric.csproj">
       <Project>{9c487f07-1138-4429-8b3c-dd6a93e366f7}</Project>
       <Name>IntroCollectionGeneric</Name>
@@ -57,6 +61,9 @@
       <Project>{ba8d70d8-914a-4dc1-8e89-ce1813edf624}</Project>
       <Name>Timing</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
