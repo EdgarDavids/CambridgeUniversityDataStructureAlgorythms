@@ -49,6 +49,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Basic\Basic.csproj">
+      <Project>{663a4d95-34f0-4f38-ad37-61ce42d11b5b}</Project>
+      <Name>Basic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Exercises\Exercises.csproj">
       <Project>{7f70f157-7dcf-47cb-9431-ea009f3dbf10}</Project>
       <Name>Exercises</Name>
