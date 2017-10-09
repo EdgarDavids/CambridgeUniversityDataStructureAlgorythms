@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Basic
 {
-    public class GenericUserCollection<T>
+    public class GenericUserCollection<T>:IEnumerable<T>
     {
         protected ArrayList InnerList { get; set; }
 
@@ -24,6 +26,19 @@ namespace Basic
         public int Count()
         {
             return InnerList.Count;
+        }
+
+       
+        public IEnumerator GetEnumerator()
+        {
+            return InnerList.GetEnumerator();
+        }
+
+        IEnumerator<T> IEnumerable<T>.GetEnumerator()
+        {
+            foreach (T item in InnerList) {
+                yield return item;
+            }
         }
     }
 }

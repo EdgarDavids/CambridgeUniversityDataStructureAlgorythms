@@ -42,7 +42,9 @@
   <ItemGroup>
     <Compile Include="c1\l1\Exam.cs" />
     <Compile Include="c1\l1\ExamLauncher.cs" />
+    <Compile Include="c1\l2\Helper.cs" />
     <Compile Include="c1\l3\Helper.cs" />
+    <Compile Include="c1\l4\Helper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
