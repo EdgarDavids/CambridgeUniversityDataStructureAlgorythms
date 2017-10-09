@@ -22,6 +22,28 @@ namespace IntroCollectionsGenerics
             Console.WriteLine("Number of names: {0}", names.Count());
         }
 
+        public static void BasicOperationsCollectionExercise()
+        {
+            BasicOperationsCollection();
+            UserCollection names = new UserCollection();
+            names.Add("David");
+            names.Add("Bernica");
+            names.Add("Raymond");
+            names.Add("Clayton");
+            Console.WriteLine("Initial list of names:");
+            foreach (object name in names) Console.WriteLine(name);
+            Console.WriteLine("Number of names: {0}", names.Count());
+            Console.WriteLine("Insert Eduard:");
+            names.Insert(1,"Eduard");
+            Console.WriteLine("Number of names: {0}", names.Count());
+            Console.WriteLine("Contains Clayton: {0}", names.Contains("Clayton"));
+            Console.WriteLine("Contains Boris: {0}", names.Contains("Boris"));
+            Console.WriteLine("Raymond index is : {0}", names.IndexOf("Raymond"));
+            Console.WriteLine("Remove index 2:");
+            names.RemoveAt(2);
+            Console.WriteLine("Number of names: {0}", names.Count());
+        }
+
         public static void DoSwap() {
             Console.WriteLine("int swap:");
             int intvalue1 = 100;

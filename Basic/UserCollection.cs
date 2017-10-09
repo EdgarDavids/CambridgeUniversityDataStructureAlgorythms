@@ -7,7 +7,7 @@ namespace Basic
         public void Add(object item) {
             InnerList.Add(item);
         }
-
+        
         public void Remove(object item) {
             InnerList.Remove(item);
         }
@@ -18,6 +18,22 @@ namespace Basic
 
         public new void Clear() {
             InnerList.Clear();
+        }
+
+        public void Insert(int i, object item) {
+            InnerList.Insert(i, item);
+        }
+
+        public bool Contains(object item) {
+            return InnerList.Contains(item);
+        }
+
+        public int IndexOf(object item) {
+            return InnerList.IndexOf(item);
+        }
+
+        public new void RemoveAt(int i) {
+            InnerList.RemoveAt(i);
         }
     }
 }
