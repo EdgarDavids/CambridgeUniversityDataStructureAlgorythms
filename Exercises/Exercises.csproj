@@ -47,6 +47,8 @@
     <Compile Include="c1\l4\Helper.cs" />
     <Compile Include="c2\l1\Grade.cs" />
     <Compile Include="c2\l1\GradeCalculator.cs" />
+    <Compile Include="c2\l2\Grade.cs" />
+    <Compile Include="c2\l2\GradeCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -56,7 +58,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="c2\l2\" />
     <Folder Include="c2\l3\" />
     <Folder Include="c2\l4\" />
   </ItemGroup>
