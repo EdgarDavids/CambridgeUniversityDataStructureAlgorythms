@@ -10,7 +10,7 @@ namespace CambridgeUniversityDataStructureAlgorythms
         {
             Timing.Timing tObj = new Timing.Timing();
             tObj.StartTime();
-            Exercises.c2.l2.GradeCalculator.Calculate();
+            Exercises.c2.l3.GradeCalculator.Calculate();
             tObj.StopTime();
             Console.WriteLine("Totally {0} seconds ", tObj.GetDuration().Seconds);
             Console.ReadLine();
