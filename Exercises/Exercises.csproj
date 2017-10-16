@@ -45,6 +45,8 @@
     <Compile Include="c1\l2\Helper.cs" />
     <Compile Include="c1\l3\Helper.cs" />
     <Compile Include="c1\l4\Helper.cs" />
+    <Compile Include="c2\l1\Grade.cs" />
+    <Compile Include="c2\l1\GradeCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +54,11 @@
       <Project>{663a4d95-34f0-4f38-ad37-61ce42d11b5b}</Project>
       <Name>Basic</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="c2\l2\" />
+    <Folder Include="c2\l3\" />
+    <Folder Include="c2\l4\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
