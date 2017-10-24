@@ -1,6 +1,5 @@
-﻿using Basic;
+﻿using BasicSort;
 using System;
-using System.Collections;
 
 namespace CambridgeUniversityDataStructureAlgorythms
 {
@@ -8,12 +7,24 @@ namespace CambridgeUniversityDataStructureAlgorythms
     {
         static void Main(string[] args)
         {
-            Timing.Timing tObj = new Timing.Timing();
-            tObj.StartTime();
-            Exercises.c2.l3.GradeCalculator.Calculate();
-            tObj.StopTime();
-            Console.WriteLine("Totally {0} seconds ", tObj.GetDuration().Seconds);
-            Console.ReadLine();
+            Exercises.c3.l2.IntSortHelper.DoSort();
+            //Timing.Timing tObj = new Timing.Timing();
+            //tObj.StartTime();
+            //Exercises.c2.l3.GradeCalculator.Calculate();
+            //int[] arr = new int[] { 72, 54, 59, 30, 31, 78, 2, 77, 82, 72};
+            
+
+            //Console.WriteLine("Enter a No. to reverse");
+            //int Number = int.Parse(Console.ReadLine());
+            //int Reverse = 0;
+            //while (Number > 0)
+            //{
+            //    int remainder = Number % 10;
+            //    Reverse = (Reverse * 10) + remainder;
+            //    Number = Number / 10;
+            //}
+            //Console.WriteLine("Reverse No. is {0}", Reverse);
+            //Console.ReadLine();
         }
     }
 }

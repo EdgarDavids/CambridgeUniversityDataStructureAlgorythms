@@ -49,16 +49,30 @@
     <Compile Include="c2\l1\GradeCalculator.cs" />
     <Compile Include="c2\l2\Grade.cs" />
     <Compile Include="c2\l2\GradeCalculator.cs" />
+    <Compile Include="c2\l3\Grade.cs" />
+    <Compile Include="c2\l3\GradeCalculator.cs" />
+    <Compile Include="c3\l2\IntSortHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BasicOperations\BasicOperations.csproj">
+      <Project>{ab1a56eb-00ab-46a3-a913-392476b9693c}</Project>
+      <Name>BasicOperations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BasicSort\BasicSort.csproj">
+      <Project>{834df15f-299d-4d22-90ad-a1dad971e55e}</Project>
+      <Name>BasicSort</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Basic\Basic.csproj">
       <Project>{663a4d95-34f0-4f38-ad37-61ce42d11b5b}</Project>
       <Name>Basic</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Timing\Timing.csproj">
+      <Project>{ba8d70d8-914a-4dc1-8e89-ce1813edf624}</Project>
+      <Name>Timing</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="c2\l3\" />
     <Folder Include="c2\l4\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
