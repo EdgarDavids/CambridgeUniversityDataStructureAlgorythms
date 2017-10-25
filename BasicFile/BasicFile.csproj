@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7F70F157-7DCF-47CB-9431-EA009F3DBF10}</ProjectGuid>
+    <ProjectGuid>{F6BE792C-A10C-45DC-912C-F13894224B73}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Exercises</RootNamespace>
-    <AssemblyName>Exercises</AssemblyName>
+    <RootNamespace>BasicFile</RootNamespace>
+    <AssemblyName>BasicFile</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,45 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="c1\l1\Exam.cs" />
-    <Compile Include="c1\l1\ExamLauncher.cs" />
-    <Compile Include="c1\l2\Helper.cs" />
-    <Compile Include="c1\l3\Helper.cs" />
-    <Compile Include="c1\l4\Helper.cs" />
-    <Compile Include="c2\l1\Grade.cs" />
-    <Compile Include="c2\l1\GradeCalculator.cs" />
-    <Compile Include="c2\l2\Grade.cs" />
-    <Compile Include="c2\l2\GradeCalculator.cs" />
-    <Compile Include="c2\l3\Grade.cs" />
-    <Compile Include="c2\l3\GradeCalculator.cs" />
-    <Compile Include="c3\l1\StrSortHelper.cs" />
-    <Compile Include="c3\l2\IntSortHelper.cs" />
+    <Compile Include="BasicFileOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BasicFile\BasicFile.csproj">
-      <Project>{f6be792c-a10c-45dc-912c-f13894224b73}</Project>
-      <Name>BasicFile</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BasicOperations\BasicOperations.csproj">
-      <Project>{ab1a56eb-00ab-46a3-a913-392476b9693c}</Project>
-      <Name>BasicOperations</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BasicSort\BasicSort.csproj">
-      <Project>{834df15f-299d-4d22-90ad-a1dad971e55e}</Project>
-      <Name>BasicSort</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Basic\Basic.csproj">
-      <Project>{663a4d95-34f0-4f38-ad37-61ce42d11b5b}</Project>
-      <Name>Basic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Timing\Timing.csproj">
-      <Project>{ba8d70d8-914a-4dc1-8e89-ce1813edf624}</Project>
-      <Name>Timing</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="c2\l4\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

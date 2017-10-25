@@ -7,7 +7,7 @@ namespace CambridgeUniversityDataStructureAlgorythms
     {
         static void Main(string[] args)
         {
-            Exercises.c3.l2.IntSortHelper.DoSort();
+            Exercises.c3.l1.StrSortHelper.DoSort();
             //Timing.Timing tObj = new Timing.Timing();
             //tObj.StartTime();
             //Exercises.c2.l3.GradeCalculator.Calculate();
