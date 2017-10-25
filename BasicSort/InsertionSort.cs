@@ -31,7 +31,7 @@ namespace BasicSort
                     SortSet[j] = SortSet[j - 1];
                     j--;
                 }
-                SortSet[j] = temp;
+                SortSet[i] = temp;
                 //DisplayChanges();
             }
             DisplayChanges();
@@ -39,7 +39,20 @@ namespace BasicSort
 
         public override void DoReverseSort()
         {
-            
+            int j = 0;
+            DisplayChanges();
+            for (int i = 1; i < SortSet.Length; i++) {
+                j = i;
+                T temp = SortSet[i];
+                while (j > 0 && SortSet[j-1].CompareTo(temp) < 0) {
+                    SortSet[j] = SortSet[j - 1];
+                    j--;
+                }
+                SortSet[j] = temp;
+                DisplayChanges();
+            }
+            DisplayChanges();
+
         }
     }
 }
