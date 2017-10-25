@@ -20,13 +20,29 @@ namespace BasicSort
             DisplayChanges();
             for (int i = 0; i < SortSet.Length; i++) {
                 min = i;
-                for (int j = i + 1; j < SortSet.Length; j++) {
+                for (int j = 1; j < SortSet.Length; j++) {
                     if (SortSet[j].CompareTo(SortSet[min]) < 0) {
                         min = j;
                     }
                 }
                 BasicOperations.Basic.Swap<T>(ref SortSet[min], ref SortSet[i]);
                 //DisplayChanges();
+            }
+            DisplayChanges();
+        }
+
+        public override void DoReverseSort()
+        {
+            int max = 0;
+
+            DisplayChanges();
+            for (int i = 0; i < SortSet.Length; i++) {
+                max = i;
+                for (int j = i+1; j < SortSet.Length; j++) { 
+                    if (SortSet[j].CompareTo(SortSet[max]) > 0) max = j;
+                }
+                BasicOperations.Basic.Swap(ref SortSet[max], ref SortSet[i]);
+                DisplayChanges();
             }
             DisplayChanges();
         }

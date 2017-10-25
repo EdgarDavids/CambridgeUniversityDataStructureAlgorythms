@@ -11,6 +11,7 @@ namespace BasicSort
         public T[] SortSet { get; set;}
 
         public abstract void DoSort();
+        public abstract void DoReverseSort();
 
         internal void DisplayChanges() {
             Console.WriteLine("");

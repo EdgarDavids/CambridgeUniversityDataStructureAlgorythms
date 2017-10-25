@@ -36,5 +36,10 @@ namespace BasicSort
             }
             DisplayChanges();
         }
+
+        public override void DoReverseSort()
+        {
+            
+        }
     }
 }

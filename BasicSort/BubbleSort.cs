@@ -17,7 +17,7 @@ namespace BasicSort
         public BubbleSort(int size) {
             SortSet = new T[size];
         }
-                
+
         public override void DoSort()
         {
             DisplayChanges();
@@ -30,5 +30,19 @@ namespace BasicSort
             }
             DisplayChanges();
         }
+
+        public override void DoReverseSort()
+        {
+            DisplayChanges();
+
+            for (int i = SortSet.Length; i > 0; i--) {
+                for (int j = 0; j < SortSet.Length-1; j++) { 
+                    if (SortSet[j].CompareTo(SortSet[j + 1]) < 0) BasicOperations.Basic.Swap(ref SortSet[j], ref SortSet[j + 1]);
+                }
+                DisplayChanges();
+            }
+            DisplayChanges();
+        }
+
     }
 }
