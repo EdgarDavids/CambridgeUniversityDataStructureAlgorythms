@@ -1,4 +1,5 @@
-﻿using BasicSort;
+﻿using BasicSearch;
+using BasicSort;
 using System;
 
 namespace CambridgeUniversityDataStructureAlgorythms
@@ -7,10 +8,15 @@ namespace CambridgeUniversityDataStructureAlgorythms
     {
         static void Main(string[] args)
         {
-            int[] arr = new int[] { 72, 54, 59, 30, 31, 78, 2, 77, 82, 72 };
-            InsertionSort<int> insertion = new InsertionSort<int>(arr.Length);
-            insertion.SortSet = arr;
-            insertion.DoReverseSort();
+            //int[] arr = new int[] { 72, 54, 59, 30, 31, 78, 2, 77, 82, 72 };
+            int[] arr = new int[] { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 };
+            BinnarySearch search = new BinnarySearch(arr.Length);
+            search.SearchSet = arr;
+            search.RecursiveSearchReport(12);
+            search.RecursiveSearchReport(99);
+
+            //Console.WriteLine("Min value is {0}", search.GetMin());
+            //Console.WriteLine("Max value is {0}", search.GetMax());
 
             Console.ReadLine();
 
@@ -32,6 +38,7 @@ namespace CambridgeUniversityDataStructureAlgorythms
             //}
             //Console.WriteLine("Reverse No. is {0}", Reverse);
             //Console.ReadLine();
+
         }
     }
 }

@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{201D2068-FEB7-4A6B-B71A-A3AE17E52F64}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{8852A5F8-9B76-457A-AB96-E3CE9AF47AA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CambridgeUniversityDataStructureAlgorythms</RootNamespace>
-    <AssemblyName>CambridgeUniversityDataStructureAlgorythms</AssemblyName>
+    <RootNamespace>BasicSearch</RootNamespace>
+    <AssemblyName>BasicSearch</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,44 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CUDSAEntryPoint.cs" />
+    <Compile Include="AbstractSearch.cs" />
+    <Compile Include="BinnarySearch.cs" />
+    <Compile Include="ISearch.cs" />
+    <Compile Include="SequentialSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BasicOperations\BasicOperations.csproj">
-      <Project>{ab1a56eb-00ab-46a3-a913-392476b9693c}</Project>
-      <Name>BasicOperations</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BasicSearch\BasicSearch.csproj">
-      <Project>{8852a5f8-9b76-457a-ab96-e3ce9af47aa1}</Project>
-      <Name>BasicSearch</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BasicSort\BasicSort.csproj">
-      <Project>{834df15f-299d-4d22-90ad-a1dad971e55e}</Project>
-      <Name>BasicSort</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Basic\Basic.csproj">
-      <Project>{663a4d95-34f0-4f38-ad37-61ce42d11b5b}</Project>
-      <Name>Basic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Exercises\Exercises.csproj">
-      <Project>{7f70f157-7dcf-47cb-9431-ea009f3dbf10}</Project>
-      <Name>Exercises</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\IntroCollectionsGenerics\IntroCollectionGeneric.csproj">
-      <Project>{9c487f07-1138-4429-8b3c-dd6a93e366f7}</Project>
-      <Name>IntroCollectionGeneric</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Timing\Timing.csproj">
-      <Project>{ba8d70d8-914a-4dc1-8e89-ce1813edf624}</Project>
-      <Name>Timing</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
