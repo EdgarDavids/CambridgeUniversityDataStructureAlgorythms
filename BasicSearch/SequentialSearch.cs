@@ -37,5 +37,27 @@ namespace BasicSearch
             }
             return min;
         }
+
+        public bool SearchSecond(int value) {
+            Attempts = 0;
+            int occurence = 0;
+            for (int i = 0; i < SearchSet.Length; i++)
+            {
+                Attempts++;
+                if (SearchSet[i] == value) occurence++;
+                if (occurence == 2) return true;
+            }
+            return false;
+        }
+
+        public bool SearchLast(int value) {
+            Attempts = 0;
+            for (int i = SearchSet.Length-1; i >-1 ; i--)
+            {
+                Attempts++;
+                if (SearchSet[i] == value) return true;
+            }
+            return false;
+        }
     }
 }

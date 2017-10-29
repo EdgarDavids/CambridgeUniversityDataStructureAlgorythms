@@ -8,12 +8,30 @@ namespace CambridgeUniversityDataStructureAlgorythms
     {
         static void Main(string[] args)
         {
-            //int[] arr = new int[] { 72, 54, 59, 30, 31, 78, 2, 77, 82, 72 };
-            int[] arr = new int[] { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 };
-            BinnarySearch search = new BinnarySearch(arr.Length);
+            int[] arr = new int[] { 72, 54, 59, 30, 31, 78, 2, 77, 82, 72 };
+            //int[] arr = new int[] { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 };
+            SequentialSearch search = new SequentialSearch(arr.Length);
             search.SearchSet = arr;
-            search.RecursiveSearchReport(12);
-            search.RecursiveSearchReport(99);
+            bool searchResults = search.SearchSecond(72);
+            if (searchResults) Console.WriteLine("Value {0} is found for {1}", 72, search.Attempts);
+            if (!searchResults) Console.WriteLine("No value {0} in search results", 72, search.Attempts);
+            searchResults = search.SearchSecond(77);
+            if (searchResults) Console.WriteLine("Value {0} is found for {1}", 77, search.Attempts);
+            if (!searchResults) Console.WriteLine("No value {0} in search results", 77, search.Attempts);
+            searchResults = search.SearchSecond(99);
+            if (searchResults) Console.WriteLine("Value {0} is found for {1}", 99, search.Attempts);
+            if (!searchResults) Console.WriteLine("No value {0} in search results", 99, search.Attempts);
+
+
+            searchResults = search.SearchLast(72);
+            if (searchResults) Console.WriteLine("Value {0} is found for {1}", 72, search.Attempts);
+            if (!searchResults) Console.WriteLine("No value {0} in search results", 72, search.Attempts);
+            searchResults = search.SearchLast(77);
+            if (searchResults) Console.WriteLine("Value {0} is found for {1}", 77, search.Attempts);
+            if (!searchResults) Console.WriteLine("No value {0} in search results", 77, search.Attempts);
+            searchResults = search.SearchLast(99);
+            if (searchResults) Console.WriteLine("Value {0} is found for {1}", 99, search.Attempts);
+            if (!searchResults) Console.WriteLine("No value {0} in search results", 99, search.Attempts);
 
             //Console.WriteLine("Min value is {0}", search.GetMin());
             //Console.WriteLine("Max value is {0}", search.GetMax());
