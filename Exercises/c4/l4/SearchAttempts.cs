@@ -20,7 +20,7 @@ namespace Exercises.c4.l4
             search1.SearchSet = arr;
             search1.SearchReport(723);
 
-            BinnarySearch search2 = new BinnarySearch(1000);
+            BinarySearch search2 = new BinarySearch(1000);
             search2.SearchSet = arr;
             search2.SearchReport(723);
         }

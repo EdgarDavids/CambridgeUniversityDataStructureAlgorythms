@@ -2,9 +2,9 @@
 
 namespace BasicSearch
 {
-    public class BinnarySearch : AbstractSearch
+    public class BinarySearch : AbstractSearch
     {
-        public BinnarySearch(int size) {
+        public BinarySearch(int size) {
             SearchSet = new int[size];
         }
         public override bool Search(int value)

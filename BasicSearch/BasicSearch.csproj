@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractSearch.cs" />
-    <Compile Include="BinnarySearch.cs" />
+    <Compile Include="BinarySearch.cs" />
     <Compile Include="ISearch.cs" />
     <Compile Include="SequentialSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
