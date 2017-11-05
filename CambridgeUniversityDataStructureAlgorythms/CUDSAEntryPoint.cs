@@ -14,7 +14,7 @@ namespace CambridgeUniversityDataStructureAlgorythms
             //Console.WriteLine("Min value is {0}", search.GetMin());
             //Console.WriteLine("Max value is {0}", search.GetMax());
 
-            Basic.Algorythms.QueueDancingLine.Apply();
+            Basic.Algorythms.RadixSort.Sort();
 
             Console.ReadLine();
 
