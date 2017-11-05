@@ -43,6 +43,9 @@
     <Compile Include="Algorythms\DecimalToMulbase.cs" />
     <Compile Include="Algorythms\Polydrome.cs" />
     <Compile Include="Algorythms\PrimaryOperations.cs" />
+    <Compile Include="Algorythms\QueueDancingLine.cs" />
+    <Compile Include="Algorythms\QueueEmergency.cs" />
+    <Compile Include="Algorythms\RadixSort.cs" />
     <Compile Include="GenericUserCollection.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

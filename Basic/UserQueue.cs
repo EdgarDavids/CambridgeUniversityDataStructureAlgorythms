@@ -15,12 +15,17 @@ namespace Basic
             arrayList = new ArrayList();
         }
 
-        public void Enqueue(object item) {
+        public object Enqueue(object item) {
             arrayList.Add(item);
+
+            return arrayList[arrayList.Count - 1];
         }
 
-        public void Dequeue() {
+        public object Dequeue() {
+            object item = arrayList[0];
             arrayList.RemoveAt(0);
+
+            return item;
         }
 
         public object Peek() {
