@@ -14,7 +14,7 @@ namespace CambridgeUniversityDataStructureAlgorythms
             //Console.WriteLine("Min value is {0}", search.GetMin());
             //Console.WriteLine("Max value is {0}", search.GetMax());
 
-            Exercises.c4.l4.SearchAttempts.SearchImplementation();
+            Basic.Algorythms.Polydrome.Apply();
 
             Console.ReadLine();
 
