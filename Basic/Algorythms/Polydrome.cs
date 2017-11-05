@@ -2,6 +2,9 @@
 
 namespace Basic.Algorythms
 {
+    /// <summary>
+    /// Stack usage
+    /// </summary>
     public static class Polydrome
     {
         public static void Apply() {
