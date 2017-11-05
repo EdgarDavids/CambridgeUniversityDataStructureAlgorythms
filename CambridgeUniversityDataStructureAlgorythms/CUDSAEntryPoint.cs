@@ -14,7 +14,7 @@ namespace CambridgeUniversityDataStructureAlgorythms
             //Console.WriteLine("Min value is {0}", search.GetMin());
             //Console.WriteLine("Max value is {0}", search.GetMax());
 
-            Basic.Algorythms.PrimaryOperations.Apply();
+            Basic.Algorythms.DecimalToMulbase.Apply();
 
             Console.ReadLine();
 
