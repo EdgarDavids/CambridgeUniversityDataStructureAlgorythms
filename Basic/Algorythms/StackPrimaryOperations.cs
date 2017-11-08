@@ -7,7 +7,7 @@ namespace Basic.Algorythms
     /// <summary>
     /// Stack usage
     /// </summary>
-    public static class PrimaryOperations
+    public static class StackPrimaryOperations
     {
         public static void Apply() {
             Stack nums = new Stack();

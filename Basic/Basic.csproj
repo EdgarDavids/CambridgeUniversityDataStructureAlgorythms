@@ -40,10 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorythms\StackPostfixOperations.cs" />
     <Compile Include="Algorythms\StackBalancedParenthsis.cs" />
     <Compile Include="Algorythms\DecimalToMulbase.cs" />
     <Compile Include="Algorythms\Polydrome.cs" />
-    <Compile Include="Algorythms\PrimaryOperations.cs" />
+    <Compile Include="Algorythms\StackPrimaryOperations.cs" />
     <Compile Include="Algorythms\PriorityQueue.cs" />
     <Compile Include="Algorythms\QueueDancingLine.cs" />
     <Compile Include="Algorythms\QueueEmergency.cs" />
