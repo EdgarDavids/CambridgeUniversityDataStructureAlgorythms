@@ -32,7 +32,7 @@ namespace Basic.Algorythms
         private static void SetPrimes(int[] primes)
         {
             for(int i=2; i<primes.Length; i++){
-                for (int j = i + 1; j < primes.Length; j++) {
+                for (int j = i*i; j < primes.Length; j++) {
                     if (j % i == 0) primes[j] = 0;
                 }
             }
