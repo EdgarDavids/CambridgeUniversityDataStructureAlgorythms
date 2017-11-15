@@ -15,7 +15,9 @@ namespace CambridgeUniversityDataStructureAlgorythms
             //Console.WriteLine("Max value is {0}", search.GetMax());
 
             //Basic.Algorythms.SieveEratosthenes.Apply();
-            Exercises.c5.l3.HelpDeskEmulator.Apply();
+            //Exercises.c5.l3.HelpDeskEmulator.Apply();
+
+            Binnaries.BitHelper.Apply();
 
             Console.ReadLine();
 

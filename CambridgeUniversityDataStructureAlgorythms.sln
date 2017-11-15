@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicFile", "BasicFile\Basi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicSearch", "BasicSearch\BasicSearch.csproj", "{8852A5F8-9B76-457A-AB96-E3CE9AF47AA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binnaries", "Binnaries\Binnaries.csproj", "{4FFF260C-3081-4B4E-9093-159F4634B06B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{8852A5F8-9B76-457A-AB96-E3CE9AF47AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8852A5F8-9B76-457A-AB96-E3CE9AF47AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8852A5F8-9B76-457A-AB96-E3CE9AF47AA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FFF260C-3081-4B4E-9093-159F4634B06B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FFF260C-3081-4B4E-9093-159F4634B06B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FFF260C-3081-4B4E-9093-159F4634B06B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FFF260C-3081-4B4E-9093-159F4634B06B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
