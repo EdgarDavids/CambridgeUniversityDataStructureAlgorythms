@@ -54,6 +54,8 @@
     <Compile Include="c3\l1\StrSortHelper.cs" />
     <Compile Include="c3\l2\IntSortHelper.cs" />
     <Compile Include="c4\l4\SearchAttempts.cs" />
+    <Compile Include="c5\l3\HelpDeskEmulator.cs" />
+    <Compile Include="c5\l3\HelpDeskTask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
