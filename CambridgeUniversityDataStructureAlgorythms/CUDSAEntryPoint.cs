@@ -17,7 +17,7 @@ namespace CambridgeUniversityDataStructureAlgorythms
             //Basic.Algorythms.SieveEratosthenes.Apply();
             //Exercises.c5.l3.HelpDeskEmulator.Apply();
 
-            Binnaries.BitHelper.Apply();
+            Binnaries.BitHelper.ShiftApply();
 
             Console.ReadLine();
 
